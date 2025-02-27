@@ -1,0 +1,147 @@
+$rosa: #DB2A6B;
+$azul-fondo: #2B2D38;
+$gris: #ABABAB;
+$poppins: "Poppins", sans-serif;
+$font-primary: "Merriweather", serif;
+
+
+.container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+
+body{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $azul-fondo;
+    overflow-x: hidden;
+    height: 100%;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    img{
+        padding-top: 20px;
+    }
+}
+
+
+.head {
+    display: flex;
+    font-family: $poppins;
+    justify-content: end;
+    align-items: end;
+    
+    &_menu{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+    }
+    &_menu a{
+        text-decoration: none;  
+        font-size: 18px;
+        font-weight: 400;    
+        color: $gris; 
+        justify-content: center;
+        color: $gris;
+       
+    }
+}
+
+.gris{
+    color: white !important;
+    position: relative;
+    &::before{
+        content: "";
+        width: 30px;
+        height: 5px;
+        background-color: #DB2A6B;
+        position: absolute;
+        top: 30px;
+        right: 17px;
+        border-radius: 2px;
+    }
+}
+
+
+
+.hero{
+    max-width: 600px;
+    &_title{
+        font-weight: 700;
+        font-size: 61px;
+        color: white;
+        font-family: $font-primary;
+        margin: 0;
+        padding-top: 90px;
+    }
+
+    &_subtitle{
+        font-family: $poppins;
+        color: $gris;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    &_botones{
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+        padding-left: 0;
+        font-family: $poppins;
+        font-size: 16px;
+        list-style: none;
+        align-items: center;
+        
+        &_1{
+            background-color: $rosa;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px 10px 10px 0px;
+            text-decoration: none;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        &_2{
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+
+    &_info{
+        padding-top: 80px;
+        display: flex;
+        gap: 50px;
+        font-family: $poppins;
+        color: white;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    &_article{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.img_principal{
+    position: absolute;
+    top: 100px;
+    right: -50px;
+    width: 750px;
+}
